@@ -2,14 +2,21 @@ body{
     background: linear-gradient(90deg, #ffa60078 ,  #0ea04678 );
 }
 
+.logingrid .logincontainer .createbutton a{
+    margin: 25px;
+    color: forestgreen;
+
+}
+.logingrid .logincontainer .createbutton a:hover{
+    margin: 25px;
+    color: darkseagreen;
+}
+
 .logingrid .logincontainer .linkbutton {
     margin-bottom: 10px;
     margin-top: 10px;
     color: #a26c00;
     text-decoration: none;
-}
-.logingrid .logincontainer .createbutton a:hover{
-    transition: 0.5s;
 }
 
 .logingrid{
@@ -83,7 +90,7 @@ body{
     .linkbutton .linkbuttonclick .svg{
         color: black; 
         height: 40px; 
-        padding: 10% 5% 0 12%;
+        padding: 15px 10px 0 20px;
     }
     .linkbutton .linkbuttonclick .responsivelinkbutton{
         padding-left: 10px;
@@ -122,7 +129,7 @@ body{
     .linkbutton .linkbuttonclick .svg{
         color: black;
         height: 40px;
-        padding: 10% 5% 0 15%;
+        padding: 15px 25px 0 25px;
     }
     .linkbutton .linkbuttonclick .responsivelinkbutton{
         padding-left: 10px;
@@ -159,7 +166,7 @@ body{
     .linkbutton .linkbuttonclick .svg{
         color: #ce8a00;
         height: 40px; 
-        padding: 3% 5% 0 8%;
+        padding: 15px 25px 0 25px;
     }
 }
 .loggedinas{
