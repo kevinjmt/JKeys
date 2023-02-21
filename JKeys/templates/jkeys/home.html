@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Load Static Folder to load images and CSSs -->
     {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JKeys - 🔒 My Vault</title>
+
+    <!-- Load images and CSSs using the static folder (for resources) -->
     <link rel="shortcut icon" type="image/png" href="{% static 'jkeys/jkey.png' %}"/>
     <link rel="stylesheet" href="{% static 'jkeys/home.css' %}">
 
@@ -15,30 +18,40 @@
 <body>
     <div class="logingrid">
         <div class="logincontainer">
+            <!-- Load image as a static resource in static folder -->
             <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
             <h1 class="title">JKeys - My Vault</h1>
 
-
+            <!-- Check if user is authenticated
+                 if it is, show his own IDs etc. -->
             {% if user.is_authenticated %}
                 <div class="divloggedin">
+                    <!-- Show to the user which account he/she is connected to -->
                     <h1 class="title">Logged In as</h1>
                     <h1 class="loggedinas">{{ user.username }}</h1>
+                    <!-- If clicked, redirect page to logout view -->
                     <a class="logout" href="{% url 'logout' %}">Log out</a>
                 </div>
 
-                <div class="logout">
-                </div>
                 <div class="createbutton"  style="margin: 25px;">
+                    <!-- Redirect to Createview -->
                     <a href="{% url 'createelement' %}">Create element</a>
                 </div>
                 <input style="display: none;" type="text" name="name" required minlength="1"
                        placeholder="Search Website IDs" class="login" >
 
+
+                <!-- Generate a link to each element of the database
+                     using the websitelist attribute (the list of elements
+                     in the Id model database) in the view Listview -->
                 {% for element in websitelist %}
+                    <!-- Generate the link build with the pattern : url/element.id
+                         for each element of the database-->
                 <a class="linkbutton" href="{% url 'element' element.id %}">
                     <div class="linkbuttonclick">
                         <img src="{% static 'jkeys/user-lock-solid.svg' %}" class="svg">
                         <div class="responsivelinkbutton">
+                            <!-- Show element's name and mail -->
                             <h2 class="infobutton">{{ element.name }}</h2>
                             <h2 class="infobutton2">{{ element.mail }}</h2>
                         </div>
@@ -48,6 +61,8 @@
 
 
             {% else %}
+                <!-- Check if user is authenticated
+                     else, ask him/her to connect to his/her account -->
               <h1 class="title" style="color: brown;">⚠️ You are not logged in</h1>
               <a href="{% url 'login' %}">Log In</a>
             {% endif %}

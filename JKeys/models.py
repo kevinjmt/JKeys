@@ -10,21 +10,30 @@ class Profile(models.Model):
     name = models.CharField(max_length=200)
 """
 
+# Class for ID model
 class Id(models.Model):
-
+    # Attributes in database to put in Text Fields
+    # Char Fields for all attributes in this part with default='' and maxlength of 200 chars
     name = models.CharField(max_length=200, default="")
     mail = models.CharField(max_length=200, default="")
     password = models.CharField(max_length=200, default="")  # TO ENCRYPT
     link = models.CharField(max_length=200, default="")
 
+    # Fields for Creation and Modification Dates
+    # Created -> editable=false to do not modify this date
+    # Modified -> auto_now=true to be changed automatically
     created = models.DateTimeField(editable=False)
     modified = models.DateTimeField(auto_now=True)
 
+    # Save function to save Creation and Modification Date
     def save(self, *args, **kwargs):
-        ''' On save, update timestamps '''
+        ''' On save, update modification date and creation date '''
+        # If the element is not yet created -> change creation date to now
+        # In every situation, when saved, change modification date to now
         if not self.id:
             self.created = timezone.now()
         self.modified = timezone.now()
+        # Override and give to model new arguments
         return super(Id, self).save(*args, **kwargs)
 
     def __str__(self):
@@ -32,32 +41,44 @@ class Id(models.Model):
 
 
 
+# Class for CreditCard model
 class CreditCard(models.Model):
-
+    # Attributes in database to put in Text Fields
+    # Char Fields for all attributes in this part with default='' and maxlength of 200 chars
+    # Not storing the CVV (Card Validation Value) because of privacy purposes
     name = models.CharField(max_length=200, default="")
     card_number = models.CharField(max_length=200, default="")  # TO ENCRYPT
 
+    # Fields for Creation and Modification Dates
+    # Created -> editable=false to do not modify this date
+    # Modified -> auto_now=true to be changed automatically
     created = models.DateTimeField(editable=False)
     modified = models.DateTimeField()
 
     def save(self, *args, **kwargs):
-        ''' On save, update timestamps '''
+        ''' On save, update modification date and creation date '''
+        # If the element is not yet created -> change creation date to now
+        # In every situation, when saved, change modification date to now
         if not self.id:
             self.created = timezone.now()
         self.modified = timezone.now()
+        # Override and give to model new arguments
         return super(CreditCard, self).save(*args, **kwargs)
 
     def __str__(self):
         return self.name
 
 
-class IdCard(models.Model):
 
+# Class for IdCard model
+class IdCard(models.Model):
+    # Attributes in database to put in Text Fields
+    # Char Fields for all attributes in this part with default='' and maxlength of 200 chars
     name = models.CharField(max_length=200, default="")
-    models.CharField(max_length=200, default="")  # TO ENCRYPT
     first_name = models.CharField(max_length=200, default="")
     middle_name = models.CharField(max_length=200, default="")
     last_name = models.CharField(max_length=200, default="")
+    #models.CharField(max_length=200, default="")  # TO ENCRYPT
 
     address1 = models.CharField(max_length=200, default="")
     address2 = models.CharField(max_length=200, default="")
@@ -66,14 +87,20 @@ class IdCard(models.Model):
     postal_code = models.CharField(max_length=200, default="")
     country = models.CharField(max_length=200, default="")
 
+    # Fields for Creation and Modification Dates
+    # Created -> editable=false to do not modify this date
+    # Modified -> auto_now=true to be changed automatically
     created = models.DateTimeField(editable=False)
     modified = models.DateTimeField()
 
     def save(self, *args, **kwargs):
-        ''' On save, update timestamps '''
+        ''' On save, update modification date and creation date '''
+        # If the element is not yet created -> change creation date to now
+        # In every situation, when saved, change modification date to now
         if not self.id:
             self.created = timezone.now()
         self.modified = timezone.now()
+        # Override and give to model new arguments
         return super(IdCard, self).save(*args, **kwargs)
 
     def __str__(self):

@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Install JKey App
     'JKeys.apps.JKeysConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -51,11 +52,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# Urls location
 ROOT_URLCONF = 'JKeys.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        # Load templates as base directory from templates folder
         'DIRS': [BASE_DIR / 'templates']
         ,
         'APP_DIRS': True,
@@ -78,6 +81,7 @@ WSGI_APPLICATION = 'JKeys.wsgi.application'
 
 DATABASES = {
     'default': {
+        # Database Info and IDs
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'jkeys',
         'USER': 'root',
@@ -122,6 +126,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+# Default static folder for HTML resources (not customized here)
 STATIC_URL = 'static/'
 
 # Default primary key field type
@@ -129,6 +134,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
+# Redirection links when logged in and logged out -> home page
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
