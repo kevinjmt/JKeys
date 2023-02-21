@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKeys - 🔒 My Vault</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'jkeys/jkey.png' %}"/>
+    <link rel="stylesheet" href="{% static 'jkeys/home.css' %}">
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logingrid">
+        <div class="logincontainer">
+            <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
+            <h1 class="title">JKeys - My Vault</h1>
+
+
+            {% if user.is_authenticated %}
+                <div class="divloggedin">
+                    <h1 class="title">Logged In as</h1>
+                    <h1 class="loggedinas">{{ user.username }}</h1>
+                    <a class="logout" href="{% url 'logout' %}">Log out</a>
+                </div>
+
+                <div class="logout">
+                </div>
+                <div class="createbutton"  style="margin: 25px;">
+                    <a href="{% url 'createelement' %}">Create element</a>
+                </div>
+                <input style="display: none;" type="text" name="name" required minlength="1"
+                       placeholder="Search Website IDs" class="login" >
+
+                {% for element in websitelist %}
+                <a class="linkbutton" href="{% url 'element' element.id %}">
+                    <div class="linkbuttonclick">
+                        <img src="{% static 'jkeys/user-lock-solid.svg' %}" class="svg">
+                        <div class="responsivelinkbutton">
+                            <h2 class="infobutton">{{ element.name }}</h2>
+                            <h2 class="infobutton2">{{ element.mail }}</h2>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+
+
+            {% else %}
+              <h1 class="title" style="color: brown;">⚠️ You are not logged in</h1>
+              <a href="{% url 'login' %}">Log In</a>
+            {% endif %}
+
+        </div>
+    </div>
+</body>
+</html>

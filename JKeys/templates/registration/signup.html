@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKeys - ✏️ Sign Up</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'jkeys/jkey.png' %}"/>
+    <link rel="stylesheet" href="{% static 'jkeys/singup.css' %}">
+    
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logingrid">
+        <div class="logincontainer">
+            <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
+            <h1 class="title">JKeys - Sign Up</h1>
+            <input type="text" id="login" name="name" required
+       minlength="4" maxlength="150" placeholder="Login">
+            <input type="password" id="pw" name="name" required
+       minlength="4" maxlength="150" placeholder="Password">
+       <input type="password" id="pw2" name="name" required
+  minlength="4" maxlength="150" placeholder="Repeat Password">
+       
+            <a>Register</a>
+        </div>
+    </div>
+</body>
+</html>
