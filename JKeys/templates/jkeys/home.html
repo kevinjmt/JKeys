@@ -64,7 +64,10 @@
                 <!-- Check if user is authenticated
                      else, ask him/her to connect to his/her account -->
               <h1 class="title" style="color: brown;">⚠️ You are not logged in</h1>
-              <a href="{% url 'login' %}">Log In</a>
+                <div class="createbutton">
+                    <!-- Redirect to Login Page -->
+                    <a href="{% url 'login' %}">Login</a>
+                </div>
             {% endif %}
 
         </div>

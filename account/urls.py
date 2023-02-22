@@ -19,5 +19,7 @@ from .views import SignUpView
 
 
 urlpatterns = [
+    # Link to Signup Page
+    # Pattern : url/signup
     path("signup/", SignUpView.as_view(), name="signup"),
 ]

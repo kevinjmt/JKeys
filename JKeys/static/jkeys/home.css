@@ -2,17 +2,47 @@ body{
     background: linear-gradient(90deg, #ffa60078 ,  #0ea04678 );
 }
 
-.logingrid .logincontainer .createbutton a{
-    margin: 25px;
-    color: forestgreen;
-
+.logingrid .logincontainer .divloggedin .logout{
+    transition: 0.5s;
+    color: brown;
 }
+.logingrid .logincontainer .divloggedin .logout:hover{
+    transition: 0.5s;
+    color: indianred;
+}
+
+.logingrid .logincontainer .createbutton{
+    margin: 50px;
+}
+
+.logingrid .logincontainer .createbutton a{
+    transition: 0.5s;
+    color: forestgreen;
+}
+
 .logingrid .logincontainer .createbutton a:hover{
-    margin: 25px;
+    transition: 0.5s;
     color: darkseagreen;
 }
 
+.logingrid .logincontainer .menu{
+    margin: 10px 20% 20px 20%;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+}
+.logingrid .logincontainer .menu h2{
+    padding-top: 2%;
+    height: 50px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+}
+
+
 .logingrid .logincontainer .linkbutton {
+    transition: 0.5s;
     margin-bottom: 10px;
     margin-top: 10px;
     color: #a26c00;
@@ -70,9 +100,8 @@ body{
         border-radius: 20px;
         background: whitesmoke;
     }
-    .divloggedin{
-        display: flex;
-        flex-direction: column;
+    .logingrid .logincontainer .divloggedin{
+        flex-direction: row;
     }
     .login{
         width: 100%;
@@ -202,8 +231,16 @@ body{
 }
 
 .logingrid .logincontainer .divloggedin .logout{
+    transition: 0.5s;
     align-self: center;
     color: brown;
+    padding-left: 5%;
+}
+
+.logingrid .logincontainer .divloggedin .logout.hover{
+    transition: 0.5s;
+    align-self: center;
+    color: pink;
     padding-left: 5%;
 }
 

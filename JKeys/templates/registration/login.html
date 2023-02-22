@@ -15,24 +15,78 @@
 
     <div class="logingrid">
 
+        <form method="post">
+            <div class="logincontainer">
+
                 <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
                 <h1 class="title">JKeys - Log In</h1>
 
-        <form method="post">
-
             {% csrf_token %}
+
+                <div class="idrow">
+
+                    <input type="text" name="username" maxlength="150" class="login" placeholder="Username"
+                           autocapitalize="none" autocomplete="username" autofocus="" maxlength="150"
+                           required="" id="id_username">
+                    <input type="password" name="password" class="login" placeholder="Password"
+                           autocomplete="current-password" required="" id="id_password">
+                    <!--
+                    <label for="id_username">Username:</label>
+                    <input type="text" name="username" autofocus="" autocapitalize="none"
+                           autocomplete="username" maxlength="150" required="" id="id_username">
+                           -->
+                </div>
+
+                    <!--
+                    <label for="id_password">Password:</label>
+                    <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+                    -->
+
+                <button type="submit" class="editbutton" ><u>Log In</u></button>
+                <a class="deletebutton" href="{% url 'signup' %}">Sign Up</a>
+
+            </div>
+
+        </form>
+            <!--
             <div class="logincontainer">
 
                 <input type="text" id="login" name="username" required
                                                   minlength="4" maxlength="150" placeholder="Username">
-                <input type="password" id="pw" name="pw" required
+                <input type="password" id="pw" name="password" required
                                                minlength="4" maxlength="150" placeholder="Password">
 
                 <button type="submit" style="padding-right: 25px;">Log In</button>
+                <a class="logout" href="/accounts/signup/">Sign Up</a>
 
             </div>
 
-            </form>
+                <a class="logout" href="/accounts/signup/">Sign Up</a>
+
+
+
+
+
+                <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
+                <h1 class="title">JKeys - Log In</h1>
+
+
+
+
+                <input type="text" id="login" name="username" required
+                                                  minlength="4" maxlength="150" placeholder="Username">
+                <input type="password" id="pw" name="password" required
+                                               minlength="4" maxlength="150" placeholder="Password">
+
+                <button type="submit" style="padding-right: 25px;">Log In</button>
+                <a class="logout" href="{% url 'signup' %}">Sign Up</a>
+
+            </div>
+
+                <button type="submit" style="padding-right: 25px;">Log In</button>
+                <a class="logout" href="{% url 'signup' %}">Sign Up</a>
+
+            -->
     </div>
 </body>
 </html>
