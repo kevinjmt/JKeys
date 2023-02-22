@@ -91,6 +91,10 @@ body{
     .logincontainer{
         width: 90%;
     }
+    .logincontainer .divloggedin{
+        display: flex;
+        flex-direction: column;
+    }
     .logingrid{
         box-shadow: 10px 10px 10px rgba(0, 100, 0, 0.5);
         justify-content: center;
@@ -99,9 +103,6 @@ body{
         margin: 10% 2% 10% 2%;
         border-radius: 20px;
         background: whitesmoke;
-    }
-    .logingrid .logincontainer .divloggedin{
-        flex-direction: row;
     }
     .login{
         width: 100%;
@@ -129,6 +130,10 @@ body{
 @media (min-width: 574px) {
     .logincontainer{
         width: 100%;
+    }
+    .logincontainer .divloggedin{
+        display: flex;
+        flex-direction: column;
     }
     .logingrid{
         box-shadow: 10px 10px 10px rgba(0, 100, 0, 0.5);
@@ -176,6 +181,10 @@ body{
         background: whitesmoke;
         padding: 5%;
     }
+    .logincontainer .divloggedin{
+        display: flex;
+        flex-direction: row;
+    }
     .login{
         padding: 0 15px 0 15px;
         margin-bottom: 15px;
@@ -218,12 +227,6 @@ body{
     transition: 1s;
  }
 
-.logingrid .logincontainer .divloggedin{
-    justify-self: center;
-    align-self: start;
-    display: flex;
-    flex-direction: row;
-}
 
 
 .logingrid .logincontainer .divloggedin .loggedinas{

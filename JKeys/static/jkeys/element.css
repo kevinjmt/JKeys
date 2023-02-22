@@ -6,7 +6,7 @@ body{
     flex-direction: row;
 }
 
-.logingrid .logincontainer .buttons .editbutton{
+.logingrid .logincontainer .editbutton{
     transition: 0.5s;
     margin-top: 100px;
     font-size: large;
@@ -16,7 +16,7 @@ body{
     padding: 0 0 0 25px;
     background: none;
 }
-.logingrid .logincontainer .buttons .editbutton:hover{
+.logingrid .logincontainer .editbutton:hover{
     transition: 0.5s;
     color: darkseagreen;
     margin-top: 100px;
@@ -27,7 +27,7 @@ body{
 }
 
 
-.logingrid .logincontainer .buttons .deletebutton{
+.logingrid .logincontainer .deletebutton{
     transition: 0.5s;
     margin-top: 100px;
     font-size: large;
@@ -37,7 +37,7 @@ body{
     padding: 0 0 0 25px;
     background: none;
 }
-.logingrid .logincontainer .buttons .deletebutton:hover{
+.logingrid .logincontainer .deletebutton:hover{
     transition: 0.5s;
     color: indianred;
     margin-top: 100px;
@@ -251,6 +251,7 @@ body{
 .idrow .idsa:link,
 .idrow .idsa:visited,
 .idrow .idsa:active{
+    transition: 0.5s;
     font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1200 - 320)));
     word-wrap: break-word;
     color: #ce8a00;
@@ -260,7 +261,7 @@ body{
 
 .idrow .idsa:hover{
     text-shadow: #6c4800 3px 3px 3px;
-    transition: 1s;
+    transition: 0.5s;
     color: #ffb520;
 }
 
