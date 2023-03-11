@@ -21,7 +21,6 @@ class WebSite(generic.ListView):
             result.append((idcard, 'idcard'))
         for creditcard in CreditCard.objects.filter(user_id_id=self.request.user.id).order_by('modified').reverse()[:3]:
             result.append((creditcard, 'creditcard'))
-        print(result)
         return result
 
 

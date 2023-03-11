@@ -9,7 +9,7 @@
 
     <!-- Display object name in the website tab
          Object accessible from detail view -->
-        {% if user.id == object.user_id %}
+        {% if user.id == object.user_id_id %}
     <title>JKeys - 🪪 {{ object.name }}</title>
         {% else %}
             <title>JKeys - ⚠️ ERROR</title>
@@ -25,7 +25,7 @@
 <body>
 
     <div class="logingrid">
-        {% if user.id == object.user_id %}
+        {% if user.id == object.user_id_id %}
         <div class="logincontainer">
             <a href="/">
             <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>

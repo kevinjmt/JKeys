@@ -11,7 +11,7 @@
          to show to the user that he is currently deleting this object
          Object accessible from detail view -->
 
-        {% if user.id == object.user_id %}
+        {% if user.id == object.user_id_id %}
     <title>JKeys - 🚫 Deleting {{ object.name }}</title>
         {% else %}
             <title>JKeys - ⚠️ ERROR</title>
@@ -25,7 +25,7 @@
 </head>
 <body>
     <div class="logingrid">
-        {% if user.id == object.user_id %}
+        {% if user.id == object.user_id_id %}
 
         <!-- The form here is the second view for deleting
              Ask the user to confirm.
