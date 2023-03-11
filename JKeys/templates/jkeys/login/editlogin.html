@@ -10,7 +10,11 @@
     <!-- Display object name in the website tab with a pen
          to show to the user that he is editing this object
          Object accessible from detail view -->
+        {% if user.id == object.user_id %}
     <title>JKeys - ✏️ {{ object.name }}</title>
+        {% else %}
+            <title>JKeys - ⚠️ ERROR</title>
+        {% endif %}
 
     <!-- Load images and CSSs using the static folder (for resources) -->
     <link rel="shortcut icon" type="image/png" href="{% static 'jkeys/jkey.png' %}"/>
@@ -20,6 +24,7 @@
 </head>
 <body>
     <div class="logingrid">
+        {% if user.id == object.user_id %}
 
         <!-- SAME AS CREATE -->
 
@@ -33,7 +38,9 @@
                 in the database) -->
             {% csrf_token %}
             <div class="logincontainer">
+                <a href="/">
                 <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
+                </a>
                 <h1 class="title">JKeys</h1>
 
                 <div class="idrow">
@@ -76,6 +83,19 @@
                 </div>
             </div>
         </form>
+        {% else %}
+
+        <div class="logincontainer">
+            <a href="/">
+            <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
+            </a>
+            <h1 class="title">JKeys</h1>
+
+            <div class="idrow">
+              <h1 class="title" style="color: brown;">⚠️ You are not able to edit this item</h1>
+            </div>
+        </div>
+        {% endif %}
     </div>
 </body>
 </html>

@@ -11,7 +11,7 @@ class Profile(models.Model):
 """
 
 # Class for ID model
-class Id(models.Model):
+class Login(models.Model):
     # Attributes in database to put in Text Fields
     # Char Fields for all attributes in this part with default='' and maxlength of 200 chars
     name = models.CharField(max_length=200, default="")
@@ -25,6 +25,9 @@ class Id(models.Model):
     created = models.DateTimeField(editable=False)
     modified = models.DateTimeField(auto_now=True)
 
+    # Connect to the User who created the Id
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+
     # Save function to save Creation and Modification Date
     def save(self, *args, **kwargs):
         ''' On save, update modification date and creation date '''
@@ -34,7 +37,7 @@ class Id(models.Model):
             self.created = timezone.now()
         self.modified = timezone.now()
         # Override and give to model new arguments
-        return super(Id, self).save(*args, **kwargs)
+        return super(Login, self).save(*args, **kwargs)
 
     def __str__(self):
         return self.name
@@ -48,6 +51,9 @@ class CreditCard(models.Model):
     # Not storing the CVV (Card Validation Value) because of privacy purposes
     name = models.CharField(max_length=200, default="")
     card_number = models.CharField(max_length=200, default="")  # TO ENCRYPT
+
+    # Connect to the User who created the Id
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
 
     # Fields for Creation and Modification Dates
     # Created -> editable=false to do not modify this date
@@ -86,6 +92,14 @@ class IdCard(models.Model):
     state = models.CharField(max_length=200, default="")
     postal_code = models.CharField(max_length=200, default="")
     country = models.CharField(max_length=200, default="")
+
+    # Card or Passport Number
+    id_number = models.CharField(max_length=250, default="")
+
+    # Connect to the User who created the Id
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+
+
 
     # Fields for Creation and Modification Dates
     # Created -> editable=false to do not modify this date

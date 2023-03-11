@@ -9,7 +9,11 @@
 
     <!-- Display object name in the website tab
          Object accessible from detail view -->
-    <title>JKeys - {{ object.name }}</title>
+        {% if user.id == object.user_id %}
+    <title>JKeys - 💳 {{ object.name }}</title>
+        {% else %}
+            <title>JKeys - ⚠️ ERROR</title>
+        {% endif %}
 
     <!-- Load images and CSSs using the static folder (for resources) -->
     <link rel="shortcut icon" type="image/png" href="{% static 'jkeys/jkey.png' %}"/>
@@ -21,37 +25,25 @@
 <body>
 
     <div class="logingrid">
+        {% if user.id == object.user_id %}
         <div class="logincontainer">
+            <a href="/">
             <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
+            </a>
             <h1 class="title">JKeys</h1>
 
             <div class="idrow">
-                <h2>Name:</h2>
+                <h2>Card Name:</h2>
                 <!-- Display object name in the name field
                      Object accessible from detail view -->
                 <h2 class="ids">{{ object.name }}</h2>
             </div>
 
             <div class="idrow">
-                <h2>Email:</h2>
+                <h2>Card Number:</h2>
                 <!-- Display object mail in the mail field
                      Object accessible from detail view -->
-                <h2 class="ids">{{ object.mail }}</h2>
-            </div>
-
-            <div class="idrow">
-                <h2>Password:</h2>
-                <!-- Display object password in the password field
-                     Object accessible from detail view -->
-                <h2 class="ids">{{ object.password }}</h2>
-            </div>
-
-
-            <div class="idrow">
-                <h2>Link:</h2>
-                <!-- Display object link in the link field
-                     Object accessible from detail view -->
-                <a href="{{ object.link }}" target="_blank" class="idsa">{{ object.link }}</a>
+                <h2 class="ids">{{ object.card_number }}</h2>
             </div>
 
             <div class="idrow">
@@ -76,13 +68,26 @@
 
                 <!-- Connect to the Updateview of the object
                      view which is connected to the url called elementedit -->
-                <a href="{% url 'elementedit' object.id %}" class="editbutton">Edit</a>
+                <a href="{% url 'editcreditcard' object.id %}" class="editbutton">Edit</a>
 
                 <!-- Connect to the Deleteview of the object
                      view which is connected to the url called elementdelete -->
-                <a href="{% url 'elementdelete' object.id %}" class="deletebutton">Delete</a>
+                <a href="{% url 'deletecreditcard' object.id %}" class="deletebutton">Delete</a>
             </div>
         </div>
+        {% else %}
+
+        <div class="logincontainer">
+            <a href="/">
+            <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
+            </a>
+            <h1 class="title">JKeys</h1>
+
+            <div class="idrow">
+              <h1 class="title" style="color: brown;">⚠️ You are not able to see this item</h1>
+            </div>
+        </div>
+        {% endif %}
     </div>
 </body>
 </html>

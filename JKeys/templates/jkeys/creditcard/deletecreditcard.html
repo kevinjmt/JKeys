@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Load Static Folder to load images and CSSs -->
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Display object name in the website tab with a sign
+         to show to the user that he is currently deleting this object
+         Object accessible from detail view -->
+
+        {% if user.id == object.user_id %}
+    <title>JKeys - 🚫 Deleting {{ object.name }}</title>
+        {% else %}
+            <title>JKeys - ⚠️ ERROR</title>
+        {% endif %}
+
+    <!-- Load images and CSSs using the static folder (for resources) -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'jkeys/jkey.png' %}"/>
+    <link rel="stylesheet" href="{% static 'jkeys/delete.css' %}">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logingrid">
+        {% if user.id == object.user_id %}
+
+        <!-- The form here is the second view for deleting
+             Ask the user to confirm.
+             Directly linked to django classes and Deleteview -->
+        <form method="POST" id="editElement" name="editElement" class="editElement" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="logincontainer">
+                <a href="/">
+                <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
+                </a>
+                <h1 class="title">JKeys - Delete {{ object.name }} ?</h1>
+                <!-- Submit the deleting confirmation to the django classes -->
+                <button type="submit" class="deletebutton" value="Confirm"><u>Delete</u></button>
+            </div>
+        </form>
+        {% else %}
+
+        <div class="logincontainer">
+            <a href="/">
+            <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
+            </a>
+            <h1 class="title">JKeys</h1>
+
+            <div class="idrow">
+              <h1 class="title" style="color: brown;">⚠️ You are not able to delete this item</h1>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

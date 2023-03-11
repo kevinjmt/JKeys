@@ -37,30 +37,31 @@
 
                 <div>
                     <div class="pageslinks">
-                        <a class="pageslinksinactive" href="{% url 'loginhome' %}">
+                        <a class="pageslinksactive" href="/logins">
                         <h1>Logins</h1>
                         </a>
-                        <a class="pageslinksinactive" href="{% url 'idcardhome' %}">
+                        <a class="pageslinksinactive" href="/idcards">
                         <h1>ID Cards</h1>
                         </a>
-                        <a class="pageslinksinactive" href="{% url 'creditcardhome' %}">
+                        <a class="pageslinksinactive" href="/creditcards">
                         <h1>Credit Cards</h1>
                         </a>
                     </div>
                 </div>
 
+                <div class="createbutton">
+                    <!-- Redirect to Createview -->
+                    <a href="{% url 'createlogin' %}">Create Login</a>
+                </div>
                 <input style="display: none;" type="text" name="name" required minlength="1"
                        placeholder="Search Website IDs" class="login" >
 
 
-                <h1 class="title">Last Modifications</h1>
-                <h2 class="title">Logins</h2>
                 <!-- Generate a link to each element of the database
                      using the websitelist attribute (the list of elements
                      in the Id model database) in the view Listview -->
-                {% for element, type in websitelist %}
+                {% for element in loginlist %}
 
-                    {% if type == 'id' %}
                     <!-- Generate the link build with the pattern : url/element.id
                          for each element of the database-->
                 <a class="linkbutton" href="{% url 'loginpage' element.id %}">
@@ -73,50 +74,8 @@
                         </div>
                     </div>
                 </a>
-                    {% endif %}
-
                 {% endfor %}
 
-                <h2 class="title">ID Cards</h2>
-
-                {% for element, type in websitelist %}
-                    {% if type == 'idcard' %}
-
-                    <!-- Generate the link build with the pattern : url/element.id
-                         for each element of the database-->
-                <a class="linkbutton" href="{% url 'idcardpage' element.id %}">
-                    <div class="linkbuttonclick">
-                        <img src="{% static 'jkeys/id-card-solid.svg' %}" class="svg">
-                        <div class="responsivelinkbutton">
-                            <!-- Show element's name and mail -->
-                            <h2 class="infobutton">{{ element.first_name }}</h2>
-                            <h2 class="infobutton2">{{ element.last_name }}</h2>
-                        </div>
-                    </div>
-                </a>
-
-                        {% endif %}
-                {% endfor %}
-
-                <h2 class="title">Credit Cards</h2>
-
-                {% for element, type in websitelist %}
-                    {% if type == 'creditcard' %}
-
-                    <!-- Generate the link build with the pattern : url/element.id
-                         for each element of the database-->
-                <a class="linkbutton" href="{% url 'creditcardpage' element.id %}">
-                    <div class="linkbuttonclick">
-                        <img src="{% static 'jkeys/credit-card-solid.svg' %}" class="svg">
-                        <div class="responsivelinkbutton">
-                            <!-- Show element's name and mail -->
-                            <h2 class="infobutton">{{ element.name }}</h2>
-                        </div>
-                    </div>
-                </a>
-
-                        {% endif %}
-                {% endfor %}
 
             {% else %}
                 <!-- Check if user is authenticated
