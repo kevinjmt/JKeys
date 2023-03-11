@@ -28,7 +28,6 @@ body{
     justify-content: center;
     margin: 25px auto;
     border-radius: 12px;
-    max-width: 50%;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     background: #fff6e4;
@@ -161,6 +160,9 @@ body{
         border-radius: 20px;
         background: whitesmoke;
     }
+    .pageslinks{
+        width: 100%;
+    }
     .login{
         width: 100%;
         padding: 0 15px 0 15px;
@@ -201,6 +203,9 @@ body{
         border-radius: 20px;
         padding: 10% 10% 10% 10%;
         background: whitesmoke;
+    }
+    .pageslinks{
+        max-width: 50%;
     }
     .login{
         padding: 0 15px 0 15px;

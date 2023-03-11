@@ -2,23 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f69e60ad-d907-4ef6-888c-f67572d07e2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JKeys/templates/registration/password_reset_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JKeys/templates/registration/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JKeys/templates/registration/password_reset_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JKeys/templates/registration/password_reset_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/creditcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/creditcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/deletecreditcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/deletecreditcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/editcreditcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/editcreditcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/deleteidcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/deleteidcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/editidcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/editidcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/idcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/idcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/login/deletelogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/login/deletelogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/login/editlogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/login/editlogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/static/jkeys/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/static/jkeys/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/static/jkeys/singup.css" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/static/jkeys/signup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/login/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/login/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/registration/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -30,6 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -77,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678529015588</updated>
-      <workItem from="1678529016705" duration="1054000" />
+      <workItem from="1678529016705" duration="5139000" />
     </task>
     <servers />
   </component>
