@@ -29,6 +29,8 @@
                 in the database) -->
             {% csrf_token %}
             <div class="logincontainer">
+                <!-- Load image as a static resource in static folder
+                 and create a link to go back to the homepage -->
                 <a href="/">
                 <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
                 </a>
@@ -45,7 +47,7 @@
                 <div class="idrow">
                     <h2>First Name:</h2>
                     <!-- The text input field is here to show to the user the current
-                         object attribute 'mail' to update. -->
+                         object attribute 'first_name' to update. -->
                     <input type="text" value="{{ object.first_name }}" class="login" name="first_name" required
                minlength="4" maxlength="150" placeholder="First Name">
                 </div>
@@ -53,7 +55,7 @@
                 <div class="idrow">
                     <h2>Middle Name:</h2>
                     <!-- The text input field is here to show to the user the current
-                         object attribute 'password' to update. -->
+                         object attribute 'middle_name' to update. -->
                     <input type="text" value="{{ object.middle_name }}" class="login" name="middle_name" required
                minlength="4" maxlength="150" placeholder="Middle Name">
                 </div>
@@ -62,7 +64,7 @@
                 <div class="idrow">
                     <h2>Last Name:</h2>
                     <!-- The text input field is here to show to the user the current
-                        object attribute 'link' to update. -->
+                        object attribute 'last_name' to update. -->
                     <input type="text" value="{{ object.last_name }}" class="login" name="last_name" required
                minlength="4" maxlength="150" placeholder="Last Name">
                 </div>
@@ -70,7 +72,7 @@
                 <div class="idrow">
                     <h2>Address 1:</h2>
                     <!-- The text input field is here to show to the user the current
-                        object attribute 'link' to update. -->
+                        object attribute 'address1' to update. -->
                     <input type="text" value="{{ object.address1 }}" class="login" name="address1" required
                minlength="4" maxlength="150" placeholder="Address 1">
                 </div>
@@ -78,7 +80,7 @@
                 <div class="idrow">
                     <h2>Address 2:</h2>
                     <!-- The text input field is here to show to the user the current
-                        object attribute 'link' to update. -->
+                        object attribute 'address2' to update. -->
                     <input type="text" value="{{ object.address2 }}" class="login" name="address2" required
                minlength="4" maxlength="150" placeholder="Address 2">
                 </div>
@@ -86,7 +88,7 @@
                 <div class="idrow">
                     <h2>City:</h2>
                     <!-- The text input field is here to show to the user the current
-                        object attribute 'link' to update. -->
+                        object attribute 'city' to update. -->
                     <input type="text" value="{{ object.city }}" class="login" name="city" required
                minlength="4" maxlength="150" placeholder="City">
                 </div>
@@ -94,7 +96,7 @@
                 <div class="idrow">
                     <h2>State:</h2>
                     <!-- The text input field is here to show to the user the current
-                        object attribute 'link' to update. -->
+                        object attribute 'state' to update. -->
                     <input type="text" value="{{ object.state }}" class="login" name="state" required
                minlength="4" maxlength="150" placeholder="State">
                 </div>
@@ -102,7 +104,7 @@
                 <div class="idrow">
                     <h2>Postal Code:</h2>
                     <!-- The text input field is here to show to the user the current
-                        object attribute 'link' to update. -->
+                        object attribute 'postal_code' to update. -->
                     <input type="text" value="{{ object.postal_code }}" class="login" name="postal_code" required
                minlength="4" maxlength="150" placeholder="Postal Code">
                 </div>
@@ -110,7 +112,7 @@
                 <div class="idrow">
                     <h2>Country:</h2>
                     <!-- The text input field is here to show to the user the current
-                        object attribute 'link' to update. -->
+                        object attribute 'country' to update. -->
                     <input type="text" value="{{ object.country }}" class="login" name="country" required
                minlength="4" maxlength="150" placeholder="Country">
                 </div>
@@ -118,7 +120,7 @@
                 <div class="idrow">
                     <h2>ID Number:</h2>
                     <!-- The text input field is here to show to the user the current
-                        object attribute 'link' to update. -->
+                        object attribute 'id_number' to update. -->
                     <input type="text" value="{{ object.id_number }}" class="login" name="id_number" required
                minlength="4" maxlength="150" placeholder="ID Number">
                 </div>

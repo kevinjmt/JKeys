@@ -10,6 +10,7 @@
     <!-- Display object name in the website tab with a pen
          to show to the user that he is editing this object
          Object accessible from detail view -->
+        <!-- Check if user is authenticated and is the user that owns the creditcard -->
         {% if user.id == object.user_id_id %}
     <title>JKeys - ✏️ {{ object.name }}</title>
         {% else %}
@@ -24,6 +25,7 @@
 </head>
 <body>
     <div class="logingrid">
+        <!-- Check if user is authenticated and is the user that owns the creditcard -->
         {% if user.id == object.user_id_id %}
 
         <!-- SAME AS CREATE -->
@@ -38,6 +40,8 @@
                 in the database) -->
             {% csrf_token %}
             <div class="logincontainer">
+                <!-- Load image as a static resource in static folder
+                 and create a link to go back to the homepage -->
                 <a href="/">
                 <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
                 </a>
@@ -54,7 +58,7 @@
                 <div class="idrow">
                     <h2>Card Number:</h2>
                     <!-- The text input field is here to show to the user the current
-                         object attribute 'mail' to update. -->
+                         object attribute 'card_number' to update. -->
                     <input type="text" value="{{ object.card_number }}" class="login" name="card_number" required
                minlength="4" maxlength="150" placeholder="Card Number">
                 </div>
@@ -69,8 +73,12 @@
             </div>
         </form>
         {% else %}
+        <!-- Check if user is authenticated
+             else, ask him/her to log in to his/her account -->
 
         <div class="logincontainer">
+            <!-- Load image as a static resource in static folder
+             and create a link to go back to the homepage -->
             <a href="/">
             <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
             </a>

@@ -29,6 +29,8 @@
                 in the database) -->
             {% csrf_token %}
             <div class="logincontainer">
+                <!-- Load image as a static resource in static folder
+                 and create a link to go back to the homepage -->
                 <a href="/">
                 <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
                 </a>

@@ -9,6 +9,7 @@
 
     <!-- Display object name in the website tab if logged in, else ERROR
          Object accessible from detail view -->
+        <!-- Check if user is authenticated and is the user that owns the login -->
     {% if user.id == object.user_id_id %}
         <title>JKeys - 👤 {{ object.name }}</title>
     {% else %}
@@ -26,8 +27,11 @@
 
     <div class="logingrid">
 
+        <!-- Check if user is authenticated and is the user that owns the login -->
         {% if user.id == object.user_id_id %}
         <div class="logincontainer">
+            <!-- Load image as a static resource in static folder
+             and create a link to go back to the homepage -->
             <a href="/">
             <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
             </a>
@@ -82,18 +86,24 @@
                 <!-- Here are URLs redirection buttons to views associated to
                      editing and deleting -->
 
-                <!-- Connect to the Updateview of the object
-                     view which is connected to the url called elementedit -->
+                <!-- Connect to the EditFormView of the object
+                     view which is connected to the url called editlogin -->
                 <a href="{% url 'editlogin' object.id %}" class="editbutton">Edit</a>
 
-                <!-- Connect to the Deleteview of the object
-                     view which is connected to the url called elementdelete -->
+                <!-- Connect to the DeleteView of the object
+                     view which is connected to the url called deletelogin -->
                 <a href="{% url 'deletelogin' object.id %}" class="deletebutton">Delete</a>
             </div>
         </div>
+
+
         {% else %}
+        <!-- Check if user is authenticated
+             else, ask him/her to log in to his/her account -->
 
         <div class="logincontainer">
+            <!-- Load image as a static resource in static folder
+             and create a link to go back to the homepage -->
             <a href="/">
             <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
             </a>

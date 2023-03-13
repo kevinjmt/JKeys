@@ -9,6 +9,7 @@
 
     <!-- Display object name in the website tab
          Object accessible from detail view -->
+        <!-- Check if user is authenticated and is the user that owns the idcard -->
         {% if user.id == object.user_id_id %}
     <title>JKeys - 🪪 {{ object.name }}</title>
         {% else %}
@@ -25,8 +26,11 @@
 <body>
 
     <div class="logingrid">
+        <!-- Check if user is authenticated and is the user that owns the idcard -->
         {% if user.id == object.user_id_id %}
         <div class="logincontainer">
+            <!-- Load image as a static resource in static folder
+             and create a link to go back to the homepage -->
             <a href="/">
             <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
             </a>
@@ -41,14 +45,14 @@
 
             <div class="idrow">
                 <h2>First Name:</h2>
-                <!-- Display object mail in the mail field
+                <!-- Display object first_name in the mail field
                      Object accessible from detail view -->
                 <h2 class="ids">{{ object.first_name }}</h2>
             </div>
 
             <div class="idrow">
                 <h2>Middle Name:</h2>
-                <!-- Display object password in the password field
+                <!-- Display object middle_name in the password field
                      Object accessible from detail view -->
                 <h2 class="ids">{{ object.middle_name }}</h2>
             </div>
@@ -56,56 +60,56 @@
 
             <div class="idrow">
                 <h2>Last Name:</h2>
-                <!-- Display object link in the link field
+                <!-- Display object last_name in the link field
                      Object accessible from detail view -->
                 <h2 class="ids">{{ object.last_name }}</h2>
             </div>
 
             <div class="idrow">
                 <h2>Address 1:</h2>
-                <!-- Display object link in the link field
+                <!-- Display object address1 in the link field
                      Object accessible from detail view -->
                 <h2 class="ids">{{ object.address1 }}</h2>
             </div>
 
             <div class="idrow">
                 <h2>Address 2:</h2>
-                <!-- Display object link in the link field
+                <!-- Display object address2 in the link field
                      Object accessible from detail view -->
                 <h2 class="ids">{{ object.address2 }}</h2>
             </div>
 
             <div class="idrow">
                 <h2>City:</h2>
-                <!-- Display object link in the link field
+                <!-- Display object city in the link field
                      Object accessible from detail view -->
                 <h2 class="ids">{{ object.city }}</h2>
             </div>
 
             <div class="idrow">
                 <h2>State:</h2>
-                <!-- Display object link in the link field
+                <!-- Display object state in the link field
                      Object accessible from detail view -->
                 <h2 class="ids">{{ object.state }}</h2>
             </div>
 
             <div class="idrow">
                 <h2>Postal Code:</h2>
-                <!-- Display object link in the link field
+                <!-- Display object postal_code in the link field
                      Object accessible from detail view -->
                 <h2 class="ids">{{ object.postal_code }}</h2>
             </div>
 
             <div class="idrow">
                 <h2>Country:</h2>
-                <!-- Display object link in the link field
+                <!-- Display object country in the link field
                      Object accessible from detail view -->
                 <h2 class="ids">{{ object.country }}</h2>
             </div>
 
             <div class="idrow">
                 <h2>ID Number:</h2>
-                <!-- Display object link in the link field
+                <!-- Display object id_number in the link field
                      Object accessible from detail view -->
                 <h2 class="ids">{{ object.id_number }}</h2>
             </div>
@@ -140,8 +144,12 @@
             </div>
         </div>
         {% else %}
+        <!-- Check if user is authenticated
+             else, ask him/her to log in to his/her account -->
 
         <div class="logincontainer">
+            <!-- Load image as a static resource in static folder
+             and create a link to go back to the homepage -->
             <a href="/">
             <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
             </a>

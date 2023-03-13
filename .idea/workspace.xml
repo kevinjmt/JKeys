@@ -6,10 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="f69e60ad-d907-4ef6-888c-f67572d07e2c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/login/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/login/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/createcreditcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/createcreditcard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/creditcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/creditcard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/deletecreditcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/deletecreditcard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/editcreditcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/editcreditcard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/createidcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/createidcard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/deleteidcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/deleteidcard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/editidcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/editidcard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/idcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/idcard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/login/createlogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/login/createlogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/login/deletelogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/login/deletelogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/login/editlogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/login/editlogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +97,7 @@
       <workItem from="1678529016705" duration="5990000" />
       <workItem from="1678535681679" duration="565000" />
       <workItem from="1678659893249" duration="380000" />
-      <workItem from="1678698088606" duration="4957000" />
+      <workItem from="1678698088606" duration="11193000" />
     </task>
     <servers />
   </component>
