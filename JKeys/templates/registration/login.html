@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Load Static Folder to load images and CSSs -->
     {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JKeys - 👤 Log In</title>
+
+    <!-- Load images and CSSs using the static folder (for resources) -->
     <link rel="shortcut icon" type="image/png" href={% static 'jkeys/jkey.png' %}/>
     <link rel="stylesheet" href="{% static 'jkeys/login.css' %}">
     
@@ -15,6 +18,7 @@
 
     <div class="logingrid">
 
+        <!-- Form to send fields to the accounts model then in database -->
         <form method="post">
             <div class="logincontainer">
 
@@ -23,72 +27,28 @@
                 </a>
                 <h1 class="title">JKeys - Log In</h1>
 
+            <!-- Token generated to be recognized by the django app,
+            needed for encryption between Django and HTML file -->
             {% csrf_token %}
 
                 <div class="idrow">
 
+                    <!-- username field recognized by Django Account App -->
                     <input type="text" name="username" maxlength="150" class="login" placeholder="Username"
                            autocapitalize="none" autocomplete="username" autofocus="" maxlength="150"
                            required="" id="id_username">
+                    <!-- password field recognized by Django Account App -->
                     <input type="password" name="password" class="login" placeholder="Password"
                            autocomplete="current-password" required="" id="id_password">
-                    <!--
-                    <label for="id_username">Username:</label>
-                    <input type="text" name="username" autofocus="" autocapitalize="none"
-                           autocomplete="username" maxlength="150" required="" id="id_username">
-                           -->
                 </div>
 
-                    <!--
-                    <label for="id_password">Password:</label>
-                    <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
-                    -->
-
+                <!-- Button to submit form to the Django Account Model and Login to this account -->
                 <button type="submit" class="editbutton" ><u>Log In</u></button>
                 <a class="deletebutton" href="{% url 'signup' %}">Sign Up</a>
 
             </div>
 
         </form>
-            <!--
-            <div class="logincontainer">
-
-                <input type="text" id="login" name="username" required
-                                                  minlength="4" maxlength="150" placeholder="Username">
-                <input type="password" id="pw" name="password" required
-                                               minlength="4" maxlength="150" placeholder="Password">
-
-                <button type="submit" style="padding-right: 25px;">Log In</button>
-                <a class="logout" href="/accounts/signup/">Sign Up</a>
-
-            </div>
-
-                <a class="logout" href="/accounts/signup/">Sign Up</a>
-
-
-
-
-
-                <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
-                <h1 class="title">JKeys - Log In</h1>
-
-
-
-
-                <input type="text" id="login" name="username" required
-                                                  minlength="4" maxlength="150" placeholder="Username">
-                <input type="password" id="pw" name="password" required
-                                               minlength="4" maxlength="150" placeholder="Password">
-
-                <button type="submit" style="padding-right: 25px;">Log In</button>
-                <a class="logout" href="{% url 'signup' %}">Sign Up</a>
-
-            </div>
-
-                <button type="submit" style="padding-right: 25px;">Log In</button>
-                <a class="logout" href="{% url 'signup' %}">Sign Up</a>
-
-            -->
     </div>
 </body>
 </html>

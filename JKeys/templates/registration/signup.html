@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Load Static Folder to load images and CSSs -->
     {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JKeys - ✏️ Sign Up</title>
+
+    <!-- Load images and CSSs using the static folder (for resources) -->
     <link rel="shortcut icon" type="image/png" href="{% static 'jkeys/jkey.png' %}"/>
     <link rel="stylesheet" href="{% static 'jkeys/signup.css' %}">
     
@@ -14,6 +17,7 @@
 <body>
     <div class="logingrid">
 
+        <!-- Form to send fields to the accounts model then in database -->
         <form method="post">
 
             <div class="logincontainer">
@@ -23,9 +27,12 @@
                 </a>
                 <h1 class="title">JKeys - Sign Up</h1>
 
+                <!-- Token generated to be recognized by the django app,
+                needed for encryption between Django and HTML file -->
                 {% csrf_token %}
                 <p>
                     <h2 class="title">Username:</h2>
+                    <!-- username field recognized by Django Account App -->
                     <input type="text" name="username" maxlength="150" class="login" placeholder="Username"
                            autocapitalize="none" autocomplete="username" autofocus="" required="" id="id_username">
                     <p class="title" style="color: green">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</p>
@@ -34,6 +41,8 @@
 
                 <p>
                     <h2 class="title">Password:</h2>
+                    <!-- password1 field recognized by Django Account App,
+                    for password creation -->
                     <input type="password" name="password1" class="login" placeholder="Password"
                            autocomplete="new-password" required="" id="id_password1">
                     <span class="title"></span></p>
@@ -48,6 +57,8 @@
 
                 <p>
                     <h2 class="title">Confirm Password:</h2>
+                    <!-- password2 field recognized by Django Account App,
+                    for password confirmation -->
                     <input type="password" name="password2" class="login" placeholder="Confirm Password"
                            autocomplete="new-password" required="" id="id_password2">
                     <p>
@@ -55,6 +66,7 @@
                     </p>
                 </p>
 
+                <!-- Button to submit form to the Django Account Model and save it into the database -->
                 <button type="submit" class="editbutton">Sign Up</button>
             </div>
         </form>
