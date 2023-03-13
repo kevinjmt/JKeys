@@ -3,7 +3,7 @@ Your new Password Manager, private, self-hosted on your computer
 ___
 
 - 🐈‍⬛ > https://github.com/kevinjmt/JKeys
-- 🌐 > COMING SOON
+- 🌐 > https://kevinjmt.github.io/JKeysWebsite
 - ⬇️ > COMING SOON
 - 📦 > COMING SOON
 ___

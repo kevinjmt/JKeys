@@ -10,7 +10,7 @@ class Profile(models.Model):
     name = models.CharField(max_length=200)
 """
 
-# Class for ID model
+# Class for Login model
 class Login(models.Model):
     # Attributes in database to put in Text Fields
     # Char Fields for all attributes in this part with default='' and maxlength of 200 chars
@@ -25,7 +25,7 @@ class Login(models.Model):
     created = models.DateTimeField(editable=False)
     modified = models.DateTimeField(auto_now=True)
 
-    # Connect to the User who created the Id
+    # Connect to the User who created the Login as a ForeignKey
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
 
     # Save function to save Creation and Modification Date
@@ -50,9 +50,9 @@ class CreditCard(models.Model):
     # Char Fields for all attributes in this part with default='' and maxlength of 200 chars
     # Not storing the CVV (Card Validation Value) because of privacy purposes
     name = models.CharField(max_length=200, default="")
-    card_number = models.CharField(max_length=200, default="")  # TO ENCRYPT
+    card_number = models.CharField(max_length=200, default="")
 
-    # Connect to the User who created the Id
+    # Connect to the User who created the CreditCard as a ForeignKey
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
 
     # Fields for Creation and Modification Dates
@@ -84,7 +84,6 @@ class IdCard(models.Model):
     first_name = models.CharField(max_length=200, default="")
     middle_name = models.CharField(max_length=200, default="")
     last_name = models.CharField(max_length=200, default="")
-    #models.CharField(max_length=200, default="")  # TO ENCRYPT
 
     address1 = models.CharField(max_length=200, default="")
     address2 = models.CharField(max_length=200, default="")
@@ -93,10 +92,10 @@ class IdCard(models.Model):
     postal_code = models.CharField(max_length=200, default="")
     country = models.CharField(max_length=200, default="")
 
-    # Card or Passport Number
+    # IDCard or Passport Number
     id_number = models.CharField(max_length=250, default="")
 
-    # Connect to the User who created the Id
+    # Connect to the User who created the IDCard as a ForeignKey
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
 
 
