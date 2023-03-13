@@ -18,14 +18,15 @@
 <body>
     <div class="logingrid">
         <div class="logincontainer">
-            <!-- Load image as a static resource in static folder -->
+            <!-- Load image as a static resource in static folder
+             and create a link to go back to the homepage -->
             <a href="/">
             <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
             </a>
             <h1 class="title">JKeys - My Vault</h1>
 
             <!-- Check if user is authenticated
-                 if it is, show his own IDs etc. -->
+                 if it is, show his own Logins, IDCards and CreditCards -->
             {% if user.is_authenticated %}
                 <div class="divloggedin">
                     <!-- Show to the user which account he/she is connected to -->
@@ -35,10 +36,11 @@
                     <a class="logout" href="{% url 'logout' %}">Log out</a>
                 </div>
                 <div class="createbutton">
-                    <!-- Redirect to Createview -->
+                    <!-- If clicked, redirect page to reset password views -->
                     <a href="{% url 'password_reset' %}">Reset Password</a>
                 </div>
 
+                <!-- Buttons to change views (to Logins, IDCards, CreditCards views) -->
                 <div>
                     <div class="pageslinks">
                         <a class="pageslinksinactive" href="{% url 'loginhome' %}">
@@ -57,16 +59,20 @@
                        placeholder="Search Website IDs" class="login" >
 
 
+
+                <!-- Generate a link to each element of the database using the websitelist attribute
+                (a list of the 3 most recent Logins/IDCards/CreditCards created by the user) in the Listview -->
+
                 <h1 class="title">Last Modifications</h1>
                 <h2 class="title">Logins</h2>
-                <!-- Generate a link to each element of the database
-                     using the websitelist attribute (the list of elements
-                     in the Id model database) in the view Listview -->
+
+                <!-- Generate a link to the 3 most recent Logins created by the user -->
                 {% for element, type in websitelist %}
 
+                    <!-- If the element is a login (was id) create a link -->
                     {% if type == 'id' %}
-                    <!-- Generate the link build with the pattern : url/element.id
-                         for each element of the database-->
+                    <!-- Generate the link build with the pattern : url/logins/element.id
+                         for each element of the website list with type 'id' -->
                 <a class="linkbutton" href="{% url 'loginpage' element.id %}">
                     <div class="linkbuttonclick">
                         <img src="{% static 'jkeys/user-lock-solid.svg' %}" class="svg">
@@ -83,16 +89,16 @@
 
                 <h2 class="title">ID Cards</h2>
 
+                <!-- Generate a link to the 3 most recent IDCards created by the user -->
                 {% for element, type in websitelist %}
                     {% if type == 'idcard' %}
 
-                    <!-- Generate the link build with the pattern : url/element.id
-                         for each element of the database-->
+                    <!-- If the element is an idcard create a link -->
                 <a class="linkbutton" href="{% url 'idcardpage' element.id %}">
                     <div class="linkbuttonclick">
                         <img src="{% static 'jkeys/id-card-solid.svg' %}" class="svg">
                         <div class="responsivelinkbutton">
-                            <!-- Show element's name and mail -->
+                            <!-- Show element's first_name and last_name -->
                             <h2 class="infobutton">{{ element.first_name }}</h2>
                             <h2 class="infobutton2">{{ element.last_name }}</h2>
                         </div>
@@ -104,16 +110,16 @@
 
                 <h2 class="title">Credit Cards</h2>
 
+                <!-- Generate a link to the 3 most recent CreditCards created by the user -->
                 {% for element, type in websitelist %}
                     {% if type == 'creditcard' %}
 
-                    <!-- Generate the link build with the pattern : url/element.id
-                         for each element of the database-->
+                    <!-- If the element is a creditcard create a link -->
                 <a class="linkbutton" href="{% url 'creditcardpage' element.id %}">
                     <div class="linkbuttonclick">
                         <img src="{% static 'jkeys/credit-card-solid.svg' %}" class="svg">
                         <div class="responsivelinkbutton">
-                            <!-- Show element's name and mail -->
+                            <!-- Show element's name (not credit card number for security purposes) -->
                             <h2 class="infobutton">{{ element.name }}</h2>
                         </div>
                     </div>
@@ -124,10 +130,10 @@
 
             {% else %}
                 <!-- Check if user is authenticated
-                     else, ask him/her to connect to his/her account -->
+                     else, ask him/her to log in to his/her account -->
               <h1 class="title" style="color: brown;">⚠️ You are not logged in</h1>
                 <div class="createbutton">
-                    <!-- Redirect to Login Page -->
+                    <!-- Redirect to the Login Page -->
                     <a href="{% url 'login' %}">Login</a>
                 </div>
             {% endif %}

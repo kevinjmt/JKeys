@@ -18,7 +18,8 @@
 <body>
     <div class="logingrid">
         <div class="logincontainer">
-            <!-- Load image as a static resource in static folder -->
+            <!-- Load image as a static resource in static folder
+             and create a link to go back to the homepage -->
             <a href="/">
             <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
             </a>
@@ -35,10 +36,12 @@
                     <a class="logout" href="{% url 'logout' %}">Log out</a>
                 </div>
                 <div class="createbutton">
-                    <!-- Redirect to Createview -->
+                    <!-- If clicked, redirect page to reset password views -->
                     <a href="{% url 'password_reset' %}">Reset Password</a>
                 </div>
 
+                <!-- Buttons to change views (to Logins, IDCards, CreditCards views) -->
+                <!-- selected : Logins -->
                 <div>
                     <div class="pageslinks">
                         <a class="pageslinksactive" href="/logins">
@@ -54,21 +57,19 @@
                 </div>
 
                 <div class="createbutton">
-                    <!-- Redirect to Createview -->
+                    <!-- Redirect to LoginCreateView -->
                     <a href="{% url 'createlogin' %}">Create Login</a>
                 </div>
                 <input style="display: none;" type="text" name="name" required minlength="1"
                        placeholder="Search Website IDs" class="login" >
 
 
-                <!-- Generate a link to each element of the database
-                     using the websitelist attribute (the list of elements
-                     in the Id model database) in the view Listview -->
+                <!-- Generate a link to each login of the database using the loginlist attribute in the Listview -->
                 {% for element in loginlist %}
 
-                    <!-- Generate the link build with the pattern : url/element.id
-                         for each element of the database-->
+                <!-- Generate a link for each Login created by the user -->
                 <a class="linkbutton" href="{% url 'loginpage' element.id %}">
+                    <!-- Generate the link build with the pattern : url/logins/element.id -->
                     <div class="linkbuttonclick">
                         <img src="{% static 'jkeys/user-lock-solid.svg' %}" class="svg">
                         <div class="responsivelinkbutton">
@@ -83,10 +84,10 @@
 
             {% else %}
                 <!-- Check if user is authenticated
-                     else, ask him/her to connect to his/her account -->
+                     else, ask him/her to log in to his/her account -->
               <h1 class="title" style="color: brown;">⚠️ You are not logged in</h1>
                 <div class="createbutton">
-                    <!-- Redirect to Login Page -->
+                    <!-- Redirect to the Login Page -->
                     <a href="{% url 'login' %}">Login</a>
                 </div>
             {% endif %}
