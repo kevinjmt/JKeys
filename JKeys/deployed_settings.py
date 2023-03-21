@@ -107,6 +107,19 @@ DATABASES = {
     }
 }
 
+import sys
+# Use tests_jkeys as default database for tests
+if 'test' in sys.argv:
+    # Change default database fields if test_mode enabled
+    DATABASES['default'] = {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'tests_jkeys',
+        'USER': 'root',
+        'PASSWORD': 'kevin18',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

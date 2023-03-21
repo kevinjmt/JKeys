@@ -91,17 +91,6 @@ DATABASES = {
     }
 }
 
-import sys
-# Use tests_jkeys as default database for tests
-if 'test' in sys.argv:
-    DATABASES['default'] = {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tests_jkeys',
-        'USER': 'root',
-        'PASSWORD': 'kevin18',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-    }
 
 
 # Password validation

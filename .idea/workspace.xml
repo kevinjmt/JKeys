@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f69e60ad-d907-4ef6-888c-f67572d07e2c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/63b99f81-cb25-4324-926b-fe5824230f2c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/63b99f81-cb25-4324-926b-fe5824230f2c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/deployed_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/deployed_settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JKeys/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +163,7 @@
       <workItem from="1678659893249" duration="380000" />
       <workItem from="1678698088606" duration="11297000" />
       <workItem from="1678796607234" duration="2006000" />
-      <workItem from="1679402031343" duration="17476000" />
+      <workItem from="1679402031343" duration="17723000" />
     </task>
     <servers />
   </component>
