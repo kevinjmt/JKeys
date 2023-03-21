@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f69e60ad-d907-4ef6-888c-f67572d07e2c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/63b99f81-cb25-4324-926b-fe5824230f2c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/63b99f81-cb25-4324-926b-fe5824230f2c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/createcreditcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/createcreditcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/creditcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/creditcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/deletecreditcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/deletecreditcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/editcreditcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/creditcard/editcreditcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/createidcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/createidcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/deleteidcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/deleteidcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/editidcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/editidcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/idcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/idcard/idcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/login/createlogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/login/createlogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/login/deletelogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/login/deletelogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/login/editlogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/login/editlogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JKeys/templates/jkeys/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/templates/jkeys/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +20,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Programs/Python/Python311/Lib/site-packages/django/contrib/auth/models.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,27 +35,92 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Documents/GitHub/JKeys&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Documents/GitHub/JKeys/JKeys",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\GitHub\JKeys\JKeys" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django tests.Test: JKeys.tests.LoginTests">
+    <configuration name="Test: JKeys.tests.IdCardTests" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="JKeys" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="JKeys.tests.IdCardTests" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: JKeys.tests.LoginTests" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="JKeys" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="JKeys.tests.LoginTests" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: JKeys.tests.LoginTests.test_dynamic_saving" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="JKeys" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="JKeys.tests.LoginTests.test_dynamic_saving" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="JKeys" type="Python.DjangoServer" factoryName="Django server">
       <module name="JKeys" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,6 +145,13 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Django tests.Test: JKeys.tests.LoginTests" />
+        <item itemvalue="Django tests.Test: JKeys.tests.LoginTests.test_dynamic_saving" />
+        <item itemvalue="Django tests.Test: JKeys.tests.IdCardTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -97,11 +164,18 @@
       <workItem from="1678529016705" duration="5990000" />
       <workItem from="1678535681679" duration="565000" />
       <workItem from="1678659893249" duration="380000" />
-      <workItem from="1678698088606" duration="11193000" />
+      <workItem from="1678698088606" duration="11297000" />
+      <workItem from="1678796607234" duration="2006000" />
+      <workItem from="1679402031343" duration="17476000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_LoginTests_test_dynamic_saving.coverage" NAME="Test: JKeys.tests.LoginTests.test_dynamic_saving Coverage Results" MODIFIED="1679410436630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_LoginTests.coverage" NAME="Test: JKeys.tests.LoginTests Coverage Results" MODIFIED="1679415614646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_IdCardTests.coverage" NAME="Test: JKeys.tests.IdCardTests Coverage Results" MODIFIED="1679409458391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

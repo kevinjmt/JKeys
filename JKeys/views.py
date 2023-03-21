@@ -1,10 +1,13 @@
-from msilib.schema import ListView
 from django.views import generic
 from JKeys.models import Login, IdCard, CreditCard
 from django.shortcuts import render, HttpResponseRedirect, reverse
 from .forms import LoginForm, IDCardForm, CreditCardForm
+# CSRF_PROTECT used for improved security in Forms
+from django.views.decorators.csrf import csrf_protect
+
 
 # View for the Website Home Page
+@csrf_protect
 class WebSite(generic.ListView):
     # HTML link to file
     template_name = "jkeys/home.html"
@@ -28,6 +31,7 @@ class WebSite(generic.ListView):
 ########## LOGINS ##########
 
 # View for the Website Home Page
+@csrf_protect
 class LoginHome(generic.ListView):
     # HTML link to file
     template_name = "jkeys/login/home.html"
@@ -40,6 +44,7 @@ class LoginHome(generic.ListView):
         return Login.objects.all().order_by('name').filter(user_id_id=self.request.user.id)
 
 # View for the Detail Page of an Element
+@csrf_protect
 class LoginPage(generic.DetailView):
     # HTML link to file
     template_name = "jkeys/login/login.html"
@@ -48,6 +53,7 @@ class LoginPage(generic.DetailView):
 
 
 # View for the Create Page of an Element
+@csrf_protect
 class CreateLogin(generic.FormView):
     # HTML link to file
     template_name = "jkeys/login/createlogin.html"
@@ -70,6 +76,7 @@ class CreateLogin(generic.FormView):
 
 
 # View for the Edit Page of an Element
+@csrf_protect
 class EditLogin(generic.FormView):
     # HTML link to file
     template_name = "jkeys/login/editlogin.html"
@@ -99,6 +106,7 @@ class EditLogin(generic.FormView):
 
 
 # View for the Delete Page of an Element
+@csrf_protect
 class DeleteLogin(generic.DeleteView):
     # HTML link to file
     template_name = "jkeys/login/deletelogin.html"
@@ -111,6 +119,7 @@ class DeleteLogin(generic.DeleteView):
 ########## IDCARDS ##########
 
 # View for the Website Home Page
+@csrf_protect
 class IDCardHomePage(generic.ListView):
     # HTML link to file
     template_name = "jkeys/idcard/home.html"
@@ -123,6 +132,7 @@ class IDCardHomePage(generic.ListView):
         return IdCard.objects.all().order_by('name').filter(user_id_id=self.request.user.id)
 
 # View for the Detail Page of an Element
+@csrf_protect
 class IDCardPage(generic.DetailView):
     # HTML link to file
     template_name = "jkeys/idcard/idcard.html"
@@ -131,6 +141,7 @@ class IDCardPage(generic.DetailView):
 
 
 # View for the Create Page of an Element
+@csrf_protect
 class CreateIDCard(generic.FormView):
     # HTML link to file
     template_name = "jkeys/idcard/createidcard.html"
@@ -152,6 +163,7 @@ class CreateIDCard(generic.FormView):
 
 
 # View for the Edit Page of an Element
+@csrf_protect
 class EditIDCard(generic.FormView):
     # HTML link to file
     template_name = "jkeys/idcard/editidcard.html"
@@ -180,6 +192,7 @@ class EditIDCard(generic.FormView):
 
 
 # View for the Delete Page of an Element
+@csrf_protect
 class DeleteIDCard(generic.DeleteView):
     # HTML link to file
     template_name = "jkeys/idcard/deleteidcard.html"
@@ -193,6 +206,7 @@ class DeleteIDCard(generic.DeleteView):
 ########## CREDIT CARDS ##########
 
 # View for the Website Home Page
+@csrf_protect
 class CreditCardHome(generic.ListView):
     # HTML link to file
     template_name = "jkeys/creditcard/home.html"
@@ -205,6 +219,7 @@ class CreditCardHome(generic.ListView):
         return CreditCard.objects.all().order_by('name').filter(user_id_id=self.request.user.id)
 
 # View for the Detail Page of an Element
+@csrf_protect
 class CreditCardPage(generic.DetailView):
     # HTML link to file
     template_name = "jkeys/creditcard/creditcard.html"
@@ -213,6 +228,7 @@ class CreditCardPage(generic.DetailView):
 
 
 # View for the Create Page of an Element
+@csrf_protect
 class CreateCreditCard(generic.FormView):
     # HTML link to file
     template_name = "jkeys/creditcard/createcreditcard.html"
@@ -249,6 +265,7 @@ class CreateCreditCard(generic.FormView):
 
 
 # View for the Edit Page of an Element
+@csrf_protect
 class EditCreditCard(generic.FormView):
     # HTML link to file
     template_name = "jkeys/creditcard/editcreditcard.html"
@@ -297,6 +314,7 @@ class EditCreditCard(generic.FormView):
 
 
 # View for the Delete Page of an Element
+@csrf_protect
 class DeleteCreditCard(generic.DeleteView):
     # HTML link to file
     template_name = "jkeys/login/deletelogin.html"

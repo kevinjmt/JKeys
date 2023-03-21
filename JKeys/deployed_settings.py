@@ -15,6 +15,18 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# ----- MAKE CONNECTION SECURE -----
+SECURE_SSL_REDIECT = True
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE = True
+# ----------------------------------
+
+# -------------- HSTS --------------
+SECURE_HSTS_SECONDS = 2592000
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+# ----------------------------------
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -23,9 +35,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_i^iflwpla01rnr&=_^5mou(4ax)x=tx#q1dnei*#cb0@=x21x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+# CHANGED TO FALSE DUE TO SECURITY ISSUES
+DEBUG = False
 
-ALLOWED_HOSTS = []
+# Due to security issues, localhost and 127.0.0.1 (localhost ip address)
+# are the only links that have access to the JKeys app
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -90,18 +106,6 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-
-import sys
-# Use tests_jkeys as default database for tests
-if 'test' in sys.argv:
-    DATABASES['default'] = {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tests_jkeys',
-        'USER': 'root',
-        'PASSWORD': 'kevin18',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-    }
 
 
 # Password validation

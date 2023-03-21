@@ -118,5 +118,7 @@ urlpatterns = [
 
     # Default admin page
     # Pattern : url/admin
-    path('admin/', admin.site.urls),
+    # CHANGED OF DEFAULT : admin/
+    # BECAUSE OF SECURITY ISSUES
+    path('jkeys-admin-pannel/', admin.site.urls),
 ]
