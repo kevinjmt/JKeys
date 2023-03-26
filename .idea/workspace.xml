@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f69e60ad-d907-4ef6-888c-f67572d07e2c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/JKeys/tests/tests_idcard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/63b99f81-cb25-4324-926b-fe5824230f2c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/63b99f81-cb25-4324-926b-fe5824230f2c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JKeys/deployed_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/deployed_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JKeys/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JKeys/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/JKeys/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,33 +40,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Documents/GitHub/JKeys/JKeys",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Documents/GitHub/JKeys/JKeys/tests&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\GitHub\JKeys\JKeys\tests" />
+      <recent name="D:\Documents\GitHub\JKeys\JKeys" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\GitHub\JKeys\JKeys\tests" />
       <recent name="D:\Documents\GitHub\JKeys\JKeys" />
     </key>
   </component>
-  <component name="RunManager" selected="Django tests.Test: JKeys.tests.LoginTests">
-    <configuration name="Test: JKeys.tests.IdCardTests" type="DjangoTestsConfigurationType" temporary="true">
+  <component name="RunManager" selected="Django tests.Test: JKeys.tests.tests_credicard.CreditCardTests">
+    <configuration name="Test: JKeys.tests.launch_tests.LaunchTestSuite" type="DjangoTestsConfigurationType" temporary="true">
       <module name="JKeys" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,14 +84,14 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="JKeys.tests.IdCardTests" />
+      <option name="TARGET" value="JKeys.tests.launch_tests.LaunchTestSuite" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test: JKeys.tests.LoginTests" type="DjangoTestsConfigurationType" temporary="true">
+    <configuration name="Test: JKeys.tests.tests_credicard.CreditCardTests" type="DjangoTestsConfigurationType" temporary="true">
       <module name="JKeys" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -91,14 +104,14 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="JKeys.tests.LoginTests" />
+      <option name="TARGET" value="JKeys.tests.tests_credicard.CreditCardTests" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test: JKeys.tests.LoginTests.test_dynamic_saving" type="DjangoTestsConfigurationType" temporary="true">
+    <configuration name="Test: JKeys.tests.tests_home.HomePageTests" type="DjangoTestsConfigurationType" temporary="true">
       <module name="JKeys" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,7 +124,47 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="JKeys.tests.LoginTests.test_dynamic_saving" />
+      <option name="TARGET" value="JKeys.tests.tests_home.HomePageTests" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: JKeys.tests.tests_idcard.IdCardTests" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="JKeys" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="JKeys.tests.tests_idcard.IdCardTests" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: JKeys.tests.tests_login.LoginTests" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="JKeys" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="JKeys.tests.tests_login.LoginTests" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
@@ -144,9 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Django tests.Test: JKeys.tests.LoginTests" />
-        <item itemvalue="Django tests.Test: JKeys.tests.LoginTests.test_dynamic_saving" />
-        <item itemvalue="Django tests.Test: JKeys.tests.IdCardTests" />
+        <item itemvalue="Django tests.Test: JKeys.tests.tests_credicard.CreditCardTests" />
+        <item itemvalue="Django tests.Test: JKeys.tests.tests_idcard.IdCardTests" />
+        <item itemvalue="Django tests.Test: JKeys.tests.tests_home.HomePageTests" />
+        <item itemvalue="Django tests.Test: JKeys.tests.launch_tests.LaunchTestSuite" />
+        <item itemvalue="Django tests.Test: JKeys.tests.tests_login.LoginTests" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +218,12 @@
       <workItem from="1678659893249" duration="380000" />
       <workItem from="1678698088606" duration="11297000" />
       <workItem from="1678796607234" duration="2006000" />
-      <workItem from="1679402031343" duration="17723000" />
+      <workItem from="1679402031343" duration="18075000" />
+      <workItem from="1679481054468" duration="10132000" />
+      <workItem from="1679584634194" duration="3793000" />
+      <workItem from="1679649581516" duration="15392000" />
+      <workItem from="1679735052148" duration="24451000" />
+      <workItem from="1679818871959" duration="3612000" />
     </task>
     <servers />
   </component>
@@ -171,8 +231,20 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_tests_idcard_IdCardTests.coverage" NAME="Test: JKeys.tests.tests_idcard.IdCardTests Coverage Results" MODIFIED="1679822062679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_LoginTests_test_dynamic_saving.coverage" NAME="Test: JKeys.tests.LoginTests.test_dynamic_saving Coverage Results" MODIFIED="1679410436630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_LoginTests.coverage" NAME="Test: JKeys.tests.LoginTests Coverage Results" MODIFIED="1679415614646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_IdCardTests.coverage" NAME="Test: JKeys.tests.IdCardTests Coverage Results" MODIFIED="1679409458391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_tests_LoginTests.coverage" NAME="Test: JKeys.tests.tests.LoginTests Coverage Results" MODIFIED="1679755117720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_tests_EmailTest.coverage" NAME="Test: JKeys.tests.tests.EmailTest Coverage Results" MODIFIED="1679736635934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_tests_login_LoginTests.coverage" NAME="Test: JKeys.tests.tests_login.LoginTests Coverage Results" MODIFIED="1679768882561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_tests_UserAuth.coverage" NAME="Test: JKeys.tests.tests.UserAuth Coverage Results" MODIFIED="1679736625768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_tests_CreditCardTests.coverage" NAME="Test: JKeys.tests.tests.CreditCardTests Coverage Results" MODIFIED="1679680878536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_LoginTests.coverage" NAME="Test: JKeys.tests.LoginTests Coverage Results" MODIFIED="1679672450243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_tests_home_HomePageTests.coverage" NAME="Test: JKeys.tests.tests_home.HomePageTests Coverage Results" MODIFIED="1679819231614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_tests_user_UserTests.coverage" NAME="Test: JKeys.tests.tests_user.UserTests Coverage Results" MODIFIED="1679756374456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_launch_tests_LaunchTestSuite.coverage" NAME="Test: JKeys.tests.launch_tests.LaunchTestSuite Coverage Results" MODIFIED="1679781642881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_EmailTest.coverage" NAME="Test: JKeys.tests.EmailTest Coverage Results" MODIFIED="1679672166743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_tests_UserTests.coverage" NAME="Test: JKeys.tests.tests.UserTests Coverage Results" MODIFIED="1679754806578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_IdCardTests.coverage" NAME="Test: JKeys.tests.IdCardTests Coverage Results" MODIFIED="1679668527071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JKeys$Test__JKeys_tests_tests_credicard_CreditCardTests.coverage" NAME="Test: JKeys.tests.tests_credicard.CreditCardTests Coverage Results" MODIFIED="1679822090869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

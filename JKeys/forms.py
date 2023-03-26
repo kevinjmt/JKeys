@@ -26,16 +26,16 @@ class LoginForm(forms.Form):
         return new_login
 
     # Fields to be filled in the EditLogin form
-    def EditLogin(self, creditcard):
+    def EditLogin(self, login):
         # Edit the current login and connect fields named "name" or "password" in the html
         # to the current fields mentioned before of the current Login
-        creditcard.name = self.data.get("name")
-        creditcard.mail = self.data.get("mail")
-        creditcard.password = self.data.get("password")
-        creditcard.link = self.data.get("link")
+        login.name = self.data.get("name")
+        login.mail = self.data.get("mail")
+        login.password = self.data.get("password")
+        login.link = self.data.get("link")
         # Once modified, save it
-        creditcard.save()
-        return creditcard
+        login.save()
+        return login
 
 
 # Form for IDCard Model (needed to update fields in CreateView and EditView)

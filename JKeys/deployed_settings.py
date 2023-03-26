@@ -32,7 +32,7 @@ SECURE_HSTS_PRELOAD = True
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-_i^iflwpla01rnr&=_^5mou(4ax)x=tx#q1dnei*#cb0@=x21x'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
@@ -106,19 +106,6 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-
-import sys
-# Use tests_jkeys as default database for tests
-if 'test' in sys.argv:
-    # Change default database fields if test_mode enabled
-    DATABASES['default'] = {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tests_jkeys',
-        'USER': 'root',
-        'PASSWORD': 'kevin18',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-    }
 
 
 # Password validation
