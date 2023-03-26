@@ -34,6 +34,36 @@ With a beautiful UI, quick and private ! Perfect for **family use** !
 
 ___
 
+# 🔒 Security Checks
+> __Legend__:
+> 
+> ✅ Tested
+> 
+> ☑️ Partially Tested
+> 
+> ❌ Not Tested
+
+
+Because Security is one of the main concerns in my app, I tested for each model:
+- ✅ Models
+- ✅ User Foreign Key
+- ☑️ User Access to items
+- ✅ Forms
+- ✅ Templates (HTML pages)
+- ✅ URLs
+- ❌ Direct Links to other pages
+
+For the HomePage:
+- ✅ Templates (HTML pages)
+- ✅ URLs
+- ☑️ User Access to items
+
+For Each User:
+- ✅ User Singup
+- ✅ User Login
+- ☑️ Email reset Password
+- ☑️ Templates (HTML pages)
+
 # ⬇️ Installation
 
 ⏰ Installation guide coming soon !
