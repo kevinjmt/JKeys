@@ -8,18 +8,13 @@ ___
 - 📦 > COMING SOON
 ___
 
-# ⚠️ WARNING ⚠️
-### THIS PROJECT DO NOT PROVIDE A ENCRYPTED SOLUTION YET BUT WE ARE WORKING ON IT ! 
-## ⏰ STAY TUNED !
-___
-
 - ✅ Open-Source
 - ✅ Self-Hosted on your computer
 - ✅ Private (and in future update very Secure!)
 - ✅ Easy to manage and easy to use
 - ✅ Cross-Platform support
 - 🟡 Not yet including database export/import 
-- 🟡 Not yet encrypted (In future updates)
+- ☑️ Not yet encrypted (In future updates)
 - ☑️ Multi-Account Support (Only in this version)
 - ☑️ Include CreditCard and Passport/ID Card support (Only in this version)
 
@@ -35,6 +30,17 @@ With a beautiful UI, quick and private ! Perfect for **family use** !
 ___
 
 # 🔒 Security Checks
+Because Security is one of the main concerns in my app, I added these security upgrades:
+- ✅ Added deployed settings
+- ✅ Changed default admin page
+- ✅ Added Test Database for testing
+- ✅ Added HSTS and HTTPS/SSL support
+- ✅ Tested Login/CreditCard/IdCard ownership and accessibility of items
+- ✅ Removed Secret Key
+- ✅ Changed AllowedHosts to localhost ONLY
+
+---
+# 🧪 Tests
 > __Legend__:
 > 
 > ✅ Tested
@@ -44,7 +50,7 @@ ___
 > ❌ Not Tested
 
 
-Because Security is one of the main concerns in my app, I tested for each model:
+For each Model:
 - ✅ Models
 - ✅ User Foreign Key
 - ☑️ User Access to items
